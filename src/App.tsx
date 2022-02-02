@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC } from 'react';
+import Header from './components/Header';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ProfilePage from './pages/ProfilePage';
+import AboutPage from './pages/AboutPage';
+import HomePage from './pages/HomePage';
+import TodoPage from './pages/TodoPage';
+import CryptoPage from './pages/CryptoPage';
+import './styles/App.css';
 
-function App() {
+const App: FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <div className='App'>
+        <Header />
+      </div>
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/bradduderstadt/about'>
+          <Route index element={<AboutPage />} />
+          <Route path=':nbr' element={<AboutPage />} />
+        </Route>
+        <Route path='/crypto' element={<CryptoPage />} />
+        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/todo' element={<TodoPage />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
