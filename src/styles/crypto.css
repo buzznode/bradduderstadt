@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --dark: #1e2329;
+  --light: #fafafa;
+  --success: #03a66d;
+  --danger: #cf304a;
+}
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.crypto__container {
+  display: flex;
+  width: 90%;
+  margin-top: 15px;
+  margin-left: 5%;
+  justify-content: space-evenly;
+}
+
+.crypto__results-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: var(--dark);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 30px;
+}
+
+.crypto__criteria-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: fit-content;
+  background-color: var(--dark);
+  padding: 20px;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.crypto__criteria-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.crypto__name,
+.crypto__loading-text {
+  color: var(--light);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.crypto__fullname {
+  color: #b6b6b6;
+  font-size: 14px;
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+.crypto__item {
+  display: flex;
+  align-items: center;
+  padding: 12px 0px;
+  border-bottom: 1px solid #949191;
+}
+
+.crypto__item:first-child {
+  padding-top: 0px;
+}
+
+.crypto__item:last-child {
+  padding-bottom: 0px;
+  border-bottom: 0px;
+}
+
+.crypto__icon {
+  height: 24px;
+  width: 24px;
+  margin-right: 14px;
+}
+
+.crypto__price-container {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.crypto__price {
+  font-weight: 500;
+  color: var(--light);
+  font-size: 16px;
+}
+
+.crypto__price-change {
+  margin-top: 3px;
+}
+
+.crypto__danger {
+  color: var(--danger);
+}
+
+.crypto__success {
+  color: var(--success);
+}
