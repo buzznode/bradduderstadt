@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Header from './components/Header';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ProfilePage from './pages/ProfilePage';
 import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
@@ -10,21 +10,18 @@ import './styles/App.css';
 
 const App: FC = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className='App'>
         <Header />
       </div>
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/bradduderstadt/about'>
-          <Route index element={<AboutPage />} />
-          <Route path=':nbr' element={<AboutPage />} />
-        </Route>
-        <Route path='/crypto' element={<CryptoPage />} />
-        <Route path='/profile' element={<ProfilePage />} />
-        <Route path='/todo' element={<TodoPage />} />
+        <Route path='/bradduderstadt/about' element={<AboutPage />} />
+        <Route path='/bradduderstadt/crypto' element={<CryptoPage />} />
+        <Route path='/bradduderstadt/profile' element={<ProfilePage />} />
+        <Route path='/bradduderstadt/todo' element={<TodoPage />} />
+        <Route path='/bradduderstadt' element={<HomePage />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 };
 
