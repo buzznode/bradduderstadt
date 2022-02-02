@@ -10,16 +10,16 @@ import './styles/App.css';
 
 const App: FC = () => {
   return (
-    <Router>
+    <Router basename='/bradduderstadt'>
       <div className='App'>
         <Header />
       </div>
       <Routes>
-        <Route path='/bradduderstadt/about' element={<AboutPage />} />
-        <Route path='/bradduderstadt/crypto' element={<CryptoPage />} />
-        <Route path='/bradduderstadt/profile' element={<ProfilePage />} />
-        <Route path='/bradduderstadt/todo' element={<TodoPage />} />
-        <Route path='/bradduderstadt' element={<HomePage />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/crypto' element={<CryptoPage />} />
+        <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/todo' element={<TodoPage />} />
+        <Route path='/' element={<HomePage />} />
       </Routes>
     </Router>
   );
