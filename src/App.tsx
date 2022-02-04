@@ -6,6 +6,7 @@ import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
 import TodoPage from './pages/TodoPage';
 import CryptoPage from './pages/CryptoPage';
+import ResumePage from './pages/ResumePage';
 import './styles/App.css';
 
 const App: FC = () => {
@@ -18,6 +19,7 @@ const App: FC = () => {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/crypto' element={<CryptoPage />} />
         <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/resume' element={<ResumePage />} />
         <Route path='/todo' element={<TodoPage />} />
         <Route path='/' element={<HomePage />} />
       </Routes>

@@ -1,0 +1,46 @@
+.pdf-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  position: absolute;
+  top: calc(50% - 20px);
+  height: 40px;
+  z-index: 100;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.search {
+  position: absolute;
+  top: 5vh;
+  right: 1vw;
+  z-index: 100;
+}
+
+.pdf-container.loading > *:not(.pdf-viewer) {
+  display: none;
+}
+
+.react-pdf__Page__textContent {
+  line-height: 1;
+}
+
+*::selection {
+  background: rgba(124, 134, 146, 0.25);
+}
+
+mark {
+  background-color: rgba(255, 255, 0, 0.33);
+  color: transparent;
+}
