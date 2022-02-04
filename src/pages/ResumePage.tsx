@@ -4,7 +4,7 @@ import PdfViewer from '../components/pdf/PdfViewer';
 const ResumePage = () => {
   return (
     <div>
-      <PdfViewer file='Resume.pdf' />
+      <PdfViewer file='./Resume.pdf' />
     </div>
   );
 };
