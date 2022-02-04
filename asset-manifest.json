@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bradduderstadt/static/css/main.eeef8a1e.css",
-    "main.js": "/bradduderstadt/static/js/main.e8c3e2a4.js",
+    "main.js": "/bradduderstadt/static/js/main.b9081d74.js",
     "static/media/design-space-paper-textured-background.jpeg": "/bradduderstadt/static/media/design-space-paper-textured-background.14f46d37843905330859.jpeg",
     "index.html": "/bradduderstadt/index.html",
     "main.eeef8a1e.css.map": "/bradduderstadt/static/css/main.eeef8a1e.css.map",
-    "main.e8c3e2a4.js.map": "/bradduderstadt/static/js/main.e8c3e2a4.js.map"
+    "main.b9081d74.js.map": "/bradduderstadt/static/js/main.b9081d74.js.map"
   },
   "entrypoints": [
     "static/css/main.eeef8a1e.css",
-    "static/js/main.e8c3e2a4.js"
+    "static/js/main.b9081d74.js"
   ]
 }
